@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/nyaruko/software/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+${EXEC}.coe	Makefile	/^${EXEC}.coe: ${EXEC}.hex$/;"	t
+${EXEC}.elf	Makefile	/^${EXEC}.elf : $(OBJS)$/;"	t
+${EXEC}.hex	Makefile	/^${EXEC}.hex: ${EXEC}.tmp$/;"	t
+${EXEC}.tmp	Makefile	/^${EXEC}.tmp: ${EXEC}.elf$/;"	t
+.bss	sections.ld	/^	.bss : {$/;"	S
+.c.o	Makefile	/^.c.o:$/;"	t
+.data	sections.ld	/^	.data : {$/;"	S
+.rodata	sections.ld	/^    .rodata : {$/;"	S
+.text	sections.ld	/^	.text : {$/;"	S
+BUFFERSIZE	sys.h	/^#define BUFFERSIZE /;"	d
+EXEC	Makefile	/^EXEC := main$/;"	m
+GCC_WARNS	Makefile	/^GCC_WARNS := -Wall -Wextra -Wconversion -pedantic -Wcast-qual -Wcast-align -Wwrite-strings$/;"	m
+KEY_HEAD	sys.h	/^#define KEY_HEAD /;"	d
+KEY_START	sys.h	/^#define KEY_START /;"	d
+KEY_TAIL	sys.h	/^#define KEY_TAIL /;"	d
+LINE_MASK	sys.h	/^#define LINE_MASK /;"	d
+OBJS	Makefile	/^OBJS := $(SRCS:.c=.o)$/;"	m
+RISCV_COEGEN	Makefile	/^RISCV_COEGEN ?= 'BEGIN{printf "memory_initialization_radix=16;\\n memory_initialization_vector=\\/;"	m
+RISCV_GCC	Makefile	/^RISCV_GCC ?= $(RISCV_PREFIX)gcc$/;"	m
+RISCV_GCC_OPTS	Makefile	/^RISCV_GCC_OPTS ?= -static -mcmodel=medany -fvisibility=hidden -Tsections.ld -nostdlib -nolibc -n/;"	m
+RISCV_HEXGEN	Makefile	/^RISCV_HEXGEN ?= 'BEGIN{output=0;}{ gsub("\\r","",$$(NF)); if ($$1 ~\/@\/) {if ($$1 ~\/@00000000\//;"	m
+RISCV_OBJCOPY	Makefile	/^RISCV_OBJCOPY ?= $(RISCV_PREFIX)objcopy -O verilog$/;"	m
+RISCV_OBJDUMP	Makefile	/^RISCV_OBJDUMP ?= $(RISCV_PREFIX)objdump --disassemble-all --disassemble-zeroes --section=.text -/;"	m
+RISCV_PREFIX	Makefile	/^RISCV_PREFIX ?= riscv$(XLEN)-unknown-elf-$/;"	m
+SRCS	Makefile	/^SRCS := $(wildcard  *.c)$/;"	m
+VGA_LINE_O	sys.h	/^#define VGA_LINE_O /;"	d
+VGA_MAXCOL	sys.h	/^#define VGA_MAXCOL /;"	d
+VGA_MAXLINE	sys.h	/^#define VGA_MAXLINE /;"	d
+VGA_START	sys.h	/^#define VGA_START /;"	d
+XLEN	Makefile	/^XLEN ?= 64$/;"	m
+__mulsi3	mul.c	/^unsigned int __mulsi3(unsigned int a, unsigned int b) {$/;"	f	typeref:typename:unsigned int
+__udivsi3	mul.c	/^unsigned int __udivsi3(unsigned int a, unsigned int b) {$/;"	f	typeref:typename:unsigned int
+__umodsi3	mul.c	/^unsigned int __umodsi3(unsigned int a, unsigned int b) {$/;"	f	typeref:typename:unsigned int
+_bss_start	sections.ld	/^	_bss_start = .;$/;"	s	section:.bss
+_data	sections.ld	/^	_data = .;$/;"	s
+_end	sections.ld	/^	_end = .;$/;"	s
+_etext	sections.ld	/^	_etext = .;$/;"	s
+_heap_start	sections.ld	/^	_heap_start = ALIGN(1024);$/;"	s
+_stack_pointer	sections.ld	/^	_stack_pointer = .;$/;"	s
+_stack_top	sections.ld	/^	_stack_top = ALIGN(1024);$/;"	s
+all	Makefile	/^all: ${EXEC}.coe $/;"	t
+atoi	sys.c	/^int atoi(int line, int ch){$/;"	f	typeref:typename:int
+clean	Makefile	/^clean:$/;"	t
+default	Makefile	/^default: all$/;"	t
+edata	sections.ld	/^	edata = .;$/;"	s
+end	sections.ld	/^	end = .;$/;"	s
+entry	main.c	/^void entry()$/;"	f	typeref:typename:void
+etext	sections.ld	/^	etext = .;$/;"	s
+fibonacci	sys.c	/^unsigned int fibonacci(int n){$/;"	f	typeref:typename:unsigned int
+hello	main.c	/^char hello[]="Hello World 2022!\\n";$/;"	v	typeref:typename:char[]
+key_head	sys.c	/^int* key_head = (int*) KEY_HEAD;$/;"	v	typeref:typename:int *
+key_start	sys.c	/^int* key_start = (int*) KEY_START;$/;"	v	typeref:typename:int *
+key_tail	sys.c	/^int* key_tail = (int*) KEY_TAIL;$/;"	v	typeref:typename:int *
+main	main.c	/^int main()$/;"	f	typeref:typename:int
+name	sys.c	/^char name[] = "--------Xterm-------------------------------221240058-----Xiong Zhengjie---------/;"	v	typeref:typename:char[]
+newline	sys.c	/^void newline(){$/;"	f	typeref:typename:void
+now_line	sys.c	/^int		now_line=0;$/;"	v	typeref:typename:int
+poll_event	sys.c	/^int poll_event(){$/;"	f	typeref:typename:int
+putch	sys.c	/^void putch(char ch) {$/;"	f	typeref:typename:void
+putint	sys.c	/^void putint(unsigned int n){$/;"	f	typeref:typename:void
+putstr	sys.c	/^void putstr(char *str){$/;"	f	typeref:typename:void
+vga_ch	sys.c	/^int   vga_ch=0;$/;"	v	typeref:typename:int
+vga_init	sys.c	/^void vga_init(){$/;"	f	typeref:typename:void
+vga_line	sys.c	/^int   vga_line=0;$/;"	v	typeref:typename:int
+vga_start	sys.c	/^char* vga_start = (char*) VGA_START;$/;"	v	typeref:typename:char *
