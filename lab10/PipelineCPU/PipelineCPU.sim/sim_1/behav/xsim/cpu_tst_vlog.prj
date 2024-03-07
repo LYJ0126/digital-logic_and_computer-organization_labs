@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PipelineCPU.srcs/sources_1/new/ALU32.v" \
+"../../../../PipelineCPU.srcs/sources_1/new/Adder32.v" \
+"../../../../PipelineCPU.srcs/sources_1/new/BranchControl.v" \
+"../../../../PipelineCPU.srcs/sources_1/new/Control.v" \
+"../../../../PipelineCPU.srcs/sources_1/new/InstrParse.v" \
+"../../../../PipelineCPU.srcs/sources_1/new/InstrToImm.v" \
+"../../../../PipelineCPU.srcs/sources_1/new/barrelsft32.v" \
+"../../../../../lab10_pdf_and_resources/lab10/dmem.v" \
+"../../../../PipelineCPU.srcs/sources_1/new/regfile32.v" \
+"../../../../../lab10_pdf_and_resources/lab10/rv32ip.v" \
+"../../../../../lab10_pdf_and_resources/lab10/testdmem.v" \
+"../../../../../lab10_pdf_and_resources/lab10/testmem.v" \
+"../../../../../lab10_pdf_and_resources/lab10/cpu_tst.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

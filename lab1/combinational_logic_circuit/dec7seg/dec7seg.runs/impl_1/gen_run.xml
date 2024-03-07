@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1695104917">
+  <File Type="ROUTE-PWR" Name="dec7seg_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="dec7seg.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="dec7seg_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="dec7seg_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="dec7seg.msk"/>
+  <File Type="ROUTE-CLK" Name="dec7seg_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="dec7seg.vdi"/>
+  <File Type="BG-BIT" Name="dec7seg.bit"/>
+  <File Type="BG-DRC" Name="dec7seg.drc"/>
+  <File Type="BG-BGN" Name="dec7seg.bgn"/>
+  <File Type="BG-BIN" Name="dec7seg.bin"/>
+  <File Type="BITSTR-RBT" Name="dec7seg.rbt"/>
+  <File Type="BITSTR-NKY" Name="dec7seg.nky"/>
+  <File Type="BITSTR-BMM" Name="dec7seg_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dec7seg_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="dec7seg.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="dec7seg.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="dec7seg.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="dec7seg_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dec7seg.hwdef"/>
+  <File Type="PLACE-IO" Name="dec7seg_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dec7seg_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dec7seg_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dec7seg_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dec7seg_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="dec7seg_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dec7seg_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="dec7seg_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dec7seg_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dec7seg_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="dec7seg_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dec7seg_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dec7seg_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dec7seg_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dec7seg_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dec7seg_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="dec7seg_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="dec7seg_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="dec7seg_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="dec7seg_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="dec7seg_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="dec7seg_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dec7seg_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="dec7seg_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dec7seg_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dec7seg_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dec7seg_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="dec7seg_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dec7seg_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="dec7seg.pdi"/>
+  <File Type="RCFI_FILE" Name="dec7seg.rcfi"/>
+  <File Type="CFI_FILE" Name="dec7seg.cfi"/>
+  <File Type="RNPI_FILE" Name="dec7seg.rnpi"/>
+  <File Type="NPI_FILE" Name="dec7seg.npi"/>
+  <File Type="RBD_FILE" Name="dec7seg.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/decode3to8.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../lab1_pdf_and_resources/lab1/lab1/dec7seg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dec7seg"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../lab1_pdf_and_resources/lab1/lab1/dec7seg.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../lab2_pdf_and_resources/lab2/encryption6b.v" \
+"../../../../../../lab2_pdf_and_resources/lab2/encryption6b_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

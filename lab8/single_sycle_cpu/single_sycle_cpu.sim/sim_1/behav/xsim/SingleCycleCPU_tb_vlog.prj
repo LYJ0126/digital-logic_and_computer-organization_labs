@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../single_sycle_cpu.gen/sources_1/ip/clk_wiz" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/ALU32.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/Adder32.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/BranchControl.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/Control.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/DataMem.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/InstrMem.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/InstrParse.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/InstrToImm.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/SingleCycleCPU.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/barrelsft32.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/nextPC.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/pc.v" \
+"../../../../single_sycle_cpu.srcs/sources_1/new/regfile32.v" \
+"../../../../../lab8_pdf_and_resources/lab8/SingleCycleCPU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

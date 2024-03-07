@@ -1,0 +1,251 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 26 09:49:15 2023
+# Process ID: 22108
+# Current directory: C:/Vivadolabs/lab5/keyboard_interface_and_mouse_interface/keyboard_interface_and_mouse_interface.runs/synth_2/synth_1
+# Command line: vivado.exe -log KeyboardSim.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KeyboardSim.tcl
+# Log file: C:/Vivadolabs/lab5/keyboard_interface_and_mouse_interface/keyboard_interface_and_mouse_interface.runs/synth_2/synth_1/KeyboardSim.vds
+# Journal file: C:/Vivadolabs/lab5/keyboard_interface_and_mouse_interface/keyboard_interface_and_mouse_interface.runs/synth_2/synth_1\vivado.jou
+#-----------------------------------------------------------
+source KeyboardSim.tcl -notrace
+Command: synth_design -top KeyboardSim -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19048
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1115.562 ; gain = 2.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'KeyboardSim' [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.v:23]
+INFO: [Synth 8-6157] synthesizing module 'KeyBoardReceiver' [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyBoardReceiver.v:22]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyBoardReceiver.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyBoardReceiver.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyBoardReceiver.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'KeyBoardReceiver' (2#1) [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyBoardReceiver.v:22]
+INFO: [Synth 8-6157] synthesizing module 'kbcode2ascii' [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/kbcode2ascii.v:22]
+INFO: [Synth 8-3876] $readmem data file 'C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/scancode.txt' is read successfully [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/kbcode2ascii.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'kbcode2ascii' (3#1) [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/kbcode2ascii.v:22]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/seg7decimal.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/seg7decimal.v:46]
+INFO: [Synth 8-226] default block is never used [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/seg7decimal.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (4#1) [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/seg7decimal.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'dp' does not match port width (1) of module 'seg7decimal' [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.v:159]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.v:159]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardSim' (5#1) [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1170.066 ; gain = 57.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1170.066 ; gain = 57.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1170.066 ; gain = 57.301
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1170.066 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.xdc]
+WARNING: [Vivado 12-584] No ports matched 'overflow'. [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/KeyboardSim.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/KeyboardSim_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/KeyboardSim_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1286.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1286.648 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1286.648 ; gain = 173.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1286.648 ; gain = 173.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1286.648 ; gain = 173.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1286.648 ; gain = 173.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 1     
+	 257 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1286.648 ; gain = 173.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1286.648 ; gain = 173.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1286.648 ; gain = 173.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1295.285 ; gain = 182.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.285 ; gain = 182.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.285 ; gain = 182.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.285 ; gain = 182.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.285 ; gain = 182.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.285 ; gain = 182.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.285 ; gain = 182.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     7|
+|4     |LUT2   |    15|
+|5     |LUT3   |    15|
+|6     |LUT4   |    31|
+|7     |LUT5   |    11|
+|8     |LUT6   |    49|
+|9     |FDCE   |    55|
+|10    |FDRE   |    73|
+|11    |FDSE   |     1|
+|12    |IBUF   |     4|
+|13    |OBUF   |    31|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.285 ; gain = 182.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1295.285 ; gain = 65.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1295.285 ; gain = 182.520
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1303.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1304.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1304.113 ; gain = 191.348
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Vivadolabs/lab5/keyboard_interface_and_mouse_interface/keyboard_interface_and_mouse_interface.runs/synth_2/synth_1/KeyboardSim.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file KeyboardSim_utilization_synth.rpt -pb KeyboardSim_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 09:49:37 2023...

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1694857162">
+  <File Type="ROUTE-PWR" Name="hamming7check_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="hamming7check.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="hamming7check_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="hamming7check_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="hamming7check.msk"/>
+  <File Type="ROUTE-CLK" Name="hamming7check_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="hamming7check.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="hamming7check_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="hamming7check.dcp"/>
+  <File Type="BG-BIT" Name="hamming7check.bit"/>
+  <File Type="BG-DRC" Name="hamming7check.drc"/>
+  <File Type="BG-BGN" Name="hamming7check.bgn"/>
+  <File Type="BG-BIN" Name="hamming7check.bin"/>
+  <File Type="BITSTR-RBT" Name="hamming7check.rbt"/>
+  <File Type="BITSTR-NKY" Name="hamming7check.nky"/>
+  <File Type="BITSTR-BMM" Name="hamming7check_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="hamming7check_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="hamming7check.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="hamming7check_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="hamming7check.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="hamming7check_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="hamming7check.ltx"/>
+  <File Type="RCFI_FILE" Name="hamming7check.rcfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="hamming7check_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="hamming7check.hwdef"/>
+  <File Type="PLACE-IO" Name="hamming7check_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="hamming7check_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="hamming7check_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="hamming7check_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="hamming7check_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="hamming7check_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="hamming7check_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="hamming7check_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="hamming7check_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="hamming7check_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="hamming7check_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="hamming7check_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="hamming7check_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="hamming7check_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="hamming7check_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="hamming7check_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="hamming7check_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="hamming7check_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="hamming7check_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="hamming7check_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="hamming7check_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="hamming7check_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="hamming7check_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="hamming7check_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="hamming7check_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="hamming7check_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="hamming7check.pdi"/>
+  <File Type="CFI_FILE" Name="hamming7check.cfi"/>
+  <File Type="RNPI_FILE" Name="hamming7check.rnpi"/>
+  <File Type="NPI_FILE" Name="hamming7check.npi"/>
+  <File Type="RBD_FILE" Name="hamming7check.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/decode3to8.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/paritycheck4b.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../lab1_pdf_and_resources/lab1/lab1/hamming7check.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="hamming7check"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../lab1_pdf_and_resources/lab1/lab1/hamming7check.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

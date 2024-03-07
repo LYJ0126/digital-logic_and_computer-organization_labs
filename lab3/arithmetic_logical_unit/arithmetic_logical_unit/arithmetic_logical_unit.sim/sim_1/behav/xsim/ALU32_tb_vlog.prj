@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../lab3_pdf_and_resources/lab3/ALU32.v" \
+"../../../../arithmetic_logical_unit.srcs/sources_1/new/ALU_control_signal_generator.v" \
+"../../../../arithmetic_logical_unit.srcs/sources_1/new/ALUmux.v" \
+"../../../../arithmetic_logical_unit.srcs/sources_1/new/Adder32forALU.v" \
+"../../../../arithmetic_logical_unit.srcs/sources_1/new/CLA_16.v" \
+"../../../../arithmetic_logical_unit.srcs/sources_1/new/CLA_group.v" \
+"../../../../arithmetic_logical_unit.srcs/sources_1/new/CLU.v" \
+"../../../../arithmetic_logical_unit.srcs/sources_1/new/FA_PG.v" \
+"../../../../../../lab3_pdf_and_resources/lab3/barrelsft32.v" \
+"../../../../arithmetic_logical_unit.srcs/sources_1/new/mux32b.v" \
+"../../../../../../lab3_pdf_and_resources/lab3/ALU32_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

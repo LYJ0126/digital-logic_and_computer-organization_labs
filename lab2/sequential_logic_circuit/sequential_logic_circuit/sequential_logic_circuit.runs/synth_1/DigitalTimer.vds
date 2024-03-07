@@ -1,0 +1,436 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan  8 17:46:20 2024
+# Process ID: 13900
+# Current directory: C:/Vivadolabs/lab2/sequential_logic_circuit/sequential_logic_circuit/sequential_logic_circuit.runs/synth_1
+# Command line: vivado.exe -log DigitalTimer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DigitalTimer.tcl
+# Log file: C:/Vivadolabs/lab2/sequential_logic_circuit/sequential_logic_circuit/sequential_logic_circuit.runs/synth_1/DigitalTimer.vds
+# Journal file: C:/Vivadolabs/lab2/sequential_logic_circuit/sequential_logic_circuit/sequential_logic_circuit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DigitalTimer.tcl -notrace
+Command: synth_design -top DigitalTimer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1840
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1116.078 ; gain = 8.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DigitalTimer' [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/DigitalTimer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkgen' [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/clkgen.v:23]
+	Parameter clk_freq bound to: 1 - type: integer 
+	Parameter countlimit bound to: 49999999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clkgen' (1#1) [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/clkgen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg_decode' [C:/Vivadolabs/lab2/sequential_logic_circuit/sequential_logic_circuit/sequential_logic_circuit.srcs/sources_1/new/seg_decode.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seg_decode' (2#1) [C:/Vivadolabs/lab2/sequential_logic_circuit/sequential_logic_circuit/sequential_logic_circuit.srcs/sources_1/new/seg_decode.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/DigitalTimer.v:169]
+INFO: [Synth 8-6155] done synthesizing module 'DigitalTimer' (3#1) [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/DigitalTimer.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1169.449 ; gain = 62.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1169.449 ; gain = 62.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1169.449 ; gain = 62.137
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1169.449 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busw[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busw[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busw[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busw[3]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ra[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ra[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ra[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rb[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rb[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rb[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rw[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rw[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rw[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rd_hi[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rd_hi[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'we'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busa8[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busa8[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busa8[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busa8[3]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busa8[4]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busa8[5]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busa8[6]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busa8[7]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busb8[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busb8[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busb8[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busb8[3]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busb8[4]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busb8[5]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busb8[6]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'busb8[7]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/regfile_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DigitalTimer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DigitalTimer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'datain[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'datain[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'datain[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'datain[3]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'datain[4]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'datain[5]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'datain[6]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'datain[7]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'load'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataout[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataout[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataout[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataout[3]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataout[4]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataout[5]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataout[6]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataout[7]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ready'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[5]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[4]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[3]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:220]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[5]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[3]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[4]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:223]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:223]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[2]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[1]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key[0]'. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/encryption6b.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DigitalTimer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DigitalTimer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/DigitalTimer.xdc]
+Finished Parsing XDC File [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/DigitalTimer.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivadolabs/lab2/lab2_pdf_and_resources/lab2/DigitalTimer.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DigitalTimer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DigitalTimer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1280.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1280.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.594 ; gain = 173.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.594 ; gain = 173.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.594 ; gain = 173.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.594 ; gain = 173.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 8     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 6     
+	   9 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 18    
+	   9 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1280.594 ; gain = 173.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1280.594 ; gain = 173.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1280.594 ; gain = 173.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1291.242 ; gain = 183.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.156 ; gain = 186.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.156 ; gain = 186.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.156 ; gain = 186.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.156 ; gain = 186.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.156 ; gain = 186.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.156 ; gain = 186.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     2|
+|4     |LUT2   |    25|
+|5     |LUT3   |    22|
+|6     |LUT4   |    26|
+|7     |LUT5   |    32|
+|8     |LUT6   |    99|
+|9     |FDRE   |   101|
+|10    |IBUF   |    12|
+|11    |OBUF   |    18|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.156 ; gain = 186.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1294.156 ; gain = 75.699
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1294.156 ; gain = 186.844
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1306.203 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1306.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 64 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1306.203 ; gain = 198.891
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Vivadolabs/lab2/sequential_logic_circuit/sequential_logic_circuit/sequential_logic_circuit.runs/synth_1/DigitalTimer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DigitalTimer_utilization_synth.rpt -pb DigitalTimer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 17:46:58 2024...

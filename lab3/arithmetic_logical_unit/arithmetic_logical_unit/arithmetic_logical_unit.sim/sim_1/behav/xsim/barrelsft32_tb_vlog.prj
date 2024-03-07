@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../lab3_pdf_and_resources/lab3/barrelsft32.v" \
+"../../../../../../lab3_pdf_and_resources/lab3/barrelsft32_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1701277068">
+  <File Type="BITSTR-BMM" Name="mem32b_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="mem32b_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="mem32b_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="mem32b_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="mem32b_top.tcl"/>
+  <File Type="OPT-TIMING" Name="mem32b_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="mem32b_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="mem32b_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="mem32b_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="mem32b_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mem32b_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="mem32b_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="mem32b_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="mem32b_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="mem32b_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="mem32b_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mem32b_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mem32b_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mem32b_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mem32b_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mem32b_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mem32b_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="mem32b_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mem32b_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="mem32b_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="mem32b_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="mem32b_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="mem32b_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="mem32b_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="mem32b_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mem32b_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="mem32b_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mem32b_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="mem32b_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mem32b_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="mem32b_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="mem32b_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mem32b_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mem32b_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mem32b_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mem32b_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mem32b_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mem32b_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mem32b_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mem32b_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mem32b_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mem32b_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="mem32b_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mem32b_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mem32b_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mem32b_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mem32b_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mem32b_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mem32b_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mem32b_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mem32b_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mem32b_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mem32b_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="mem32b_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mem32b_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="mem32b_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="mem32b_top.nky"/>
+  <File Type="PDI-FILE" Name="mem32b_top.pdi"/>
+  <File Type="RCFI_FILE" Name="mem32b_top.rcfi"/>
+  <File Type="CFI_FILE" Name="mem32b_top.cfi"/>
+  <File Type="RNPI_FILE" Name="mem32b_top.rnpi"/>
+  <File Type="NPI_FILE" Name="mem32b_top.npi"/>
+  <File Type="RBD_FILE" Name="mem32b_top.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mem32b_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="mem32b_top.sysdef"/>
+  <File Type="BG-BGN" Name="mem32b_top.bgn"/>
+  <File Type="BG-DRC" Name="mem32b_top.drc"/>
+  <File Type="RDI-RDI" Name="mem32b_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../lab7_pdf_and_resources/lab7/mem32b.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../lab7_pdf_and_resources/lab7/mem8b.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seg_decode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mem32b_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../lab7_pdf_and_resources/lab7/datamem.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../lab7_pdf_and_resources/lab7/datamem128K.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../lab7_pdf_and_resources/lab7/mem32b_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../lab7_pdf_and_resources/lab7/registerfile.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mem32b_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../lab7_pdf_and_resources/lab7/mem32b_top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

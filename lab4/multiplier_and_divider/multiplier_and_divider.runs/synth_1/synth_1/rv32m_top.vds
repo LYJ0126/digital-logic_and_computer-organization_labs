@@ -1,0 +1,269 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 20 16:04:36 2023
+# Process ID: 19532
+# Current directory: C:/Vivadolabs/lab4/multiplier_and_divider/multiplier_and_divider.runs/synth_1/synth_1
+# Command line: vivado.exe -log rv32m_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rv32m_top.tcl
+# Log file: C:/Vivadolabs/lab4/multiplier_and_divider/multiplier_and_divider.runs/synth_1/synth_1/rv32m_top.vds
+# Journal file: C:/Vivadolabs/lab4/multiplier_and_divider/multiplier_and_divider.runs/synth_1/synth_1\vivado.jou
+#-----------------------------------------------------------
+source rv32m_top.tcl -notrace
+Command: synth_design -top rv32m_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13424
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1115.789 ; gain = 7.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rv32m_top' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/rv32m_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rv32m' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/rv32m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul_32u' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/mul_32u.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder32' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLA_16' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:43]
+INFO: [Synth 8-6157] synthesizing module 'CLA_group' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:59]
+INFO: [Synth 8-6157] synthesizing module 'FA_PG' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'FA_PG' (1#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:89]
+INFO: [Synth 8-6157] synthesizing module 'CLU' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'CLU' (2#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_group' (3#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_16' (4#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'Adder32' (5#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/Adder32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mul_32u' (6#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/mul_32u.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul_32b' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/mul_32b.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mul_32b' (7#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/mul_32b.v:23]
+INFO: [Synth 8-6157] synthesizing module 'div_32u' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/div_32u.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'div_32u' (8#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/div_32u.v:23]
+INFO: [Synth 8-6157] synthesizing module 'div_32b' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/div_32b.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'div_32b' (9#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/div_32b.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'rv32m' (10#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/rv32m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg_decode' [C:/Vivadolabs/lab4/multiplier_and_divider/multiplier_and_divider.srcs/sources_1/new/seg_decode.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Vivadolabs/lab4/multiplier_and_divider/multiplier_and_divider.srcs/sources_1/new/seg_decode.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'seg_decode' (11#1) [C:/Vivadolabs/lab4/multiplier_and_divider/multiplier_and_divider.srcs/sources_1/new/seg_decode.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/rv32m_top.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'rv32m_top' (12#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/rv32m_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1171.461 ; gain = 63.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1171.461 ; gain = 63.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1171.461 ; gain = 63.129
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1171.461 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/rv32m_top.xdc]
+Finished Parsing XDC File [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/rv32m_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/rv32m_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rv32m_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rv32m_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1286.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1286.938 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1286.938 ; gain = 178.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1286.938 ; gain = 178.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1286.938 ; gain = 178.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1286.938 ; gain = 178.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 2     
+	   4 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 5     
++---XORs : 
+	   3 Input      1 Bit         XORs := 128   
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 3     
+	   2 Input   33 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 26    
+	   3 Input   32 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   9 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 5     
+	   9 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 15    
+	   5 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1286.938 ; gain = 178.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1286.938 ; gain = 178.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1286.938 ; gain = 178.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1321.914 ; gain = 213.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1336.723 ; gain = 228.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1336.723 ; gain = 228.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1336.723 ; gain = 228.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1336.723 ; gain = 228.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1336.723 ; gain = 228.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1336.723 ; gain = 228.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    56|
+|3     |LUT1   |     8|
+|4     |LUT2   |   146|
+|5     |LUT3   |   236|
+|6     |LUT4   |   122|
+|7     |LUT5   |   192|
+|8     |LUT6   |   470|
+|9     |MUXF7  |    32|
+|10    |FDCE   |   389|
+|11    |FDRE   |    24|
+|12    |FDSE   |     8|
+|13    |IBUF   |    14|
+|14    |OBUF   |    33|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1336.723 ; gain = 228.391
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1336.723 ; gain = 112.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1336.723 ; gain = 228.391
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1348.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1348.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1348.746 ; gain = 240.414
+INFO: [Common 17-1381] The checkpoint 'C:/Vivadolabs/lab4/multiplier_and_divider/multiplier_and_divider.runs/synth_1/synth_1/rv32m_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rv32m_top_utilization_synth.rpt -pb rv32m_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 20 16:05:13 2023...

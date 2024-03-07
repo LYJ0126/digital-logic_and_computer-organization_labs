@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../lab4_pdf_and_resources/lab4/Adder32.v" \
+"../../../../../lab4_pdf_and_resources/lab4/div_32b.v" \
+"../../../../multiplier_and_divider.srcs/sim_1/new/div_32b_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

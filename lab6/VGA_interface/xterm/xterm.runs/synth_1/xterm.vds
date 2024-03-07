@@ -1,0 +1,555 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 31 16:25:00 2023
+# Process ID: 14752
+# Current directory: C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1
+# Command line: vivado.exe -log xterm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xterm.tcl
+# Log file: C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1/xterm.vds
+# Journal file: C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source xterm.tcl -notrace
+Command: synth_design -top xterm -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3836
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1128.855 ; gain = 17.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xterm' [C:/Vivadolabs/lab6/lab6_pdf_and_resources/lab6/xterm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'myclk_wiz' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1/.Xil/Vivado-14752-LAPTOP-D9H6QATN/realtime/myclk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myclk_wiz' (1#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1/.Xil/Vivado-14752-LAPTOP-D9H6QATN/realtime/myclk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardSim' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyboardSim.v:23]
+	Parameter CapsLock_kc bound to: 8'b01011000 
+	Parameter NumLock_kc bound to: 8'b01110111 
+	Parameter LShift_kc bound to: 8'b00010010 
+	Parameter RShift_kc bound to: 8'b01011001 
+	Parameter Ctrl_kc bound to: 8'b00010100 
+	Parameter Alt_kc bound to: 8'b00010001 
+	Parameter Leftarrow_kc bound to: 8'b01101011 
+	Parameter Rightarrow_kc bound to: 8'b01110100 
+	Parameter Uparrow_kc bound to: 8'b01110101 
+	Parameter Downarrow_kc bound to: 8'b01110010 
+INFO: [Synth 8-6157] synthesizing module 'KeyBoardReceiver' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyBoardReceiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyBoardReceiver.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (2#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyBoardReceiver.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyBoardReceiver.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'KeyBoardReceiver' (3#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyBoardReceiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'kbcode2ascii' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/kbcode2ascii.v:23]
+INFO: [Synth 8-3876] $readmem data file 'C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/scancode.txt' is read successfully [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/kbcode2ascii.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'kbcode2ascii' (4#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/kbcode2ascii.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyboardSim.v:178]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/seg7decimal.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/seg7decimal.v:44]
+INFO: [Synth 8-226] default block is never used [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/seg7decimal.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (5#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/seg7decimal.v:23]
+WARNING: [Synth 8-7071] port 'dp' of module 'seg7decimal' is unconnected for instance 'sevenSeg' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyboardSim.v:210]
+WARNING: [Synth 8-7023] instance 'sevenSeg' of module 'seg7decimal' has 5 connections declared, but only 4 given [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyboardSim.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardSim' (6#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/KeyboardSim.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGASim2' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/VGASim2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGACtrl2' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/VGACtrl2.v:23]
+	Parameter H_Sync_Width bound to: 96 - type: integer 
+	Parameter H_Back_Porche bound to: 48 - type: integer 
+	Parameter H_Active_Pixels bound to: 640 - type: integer 
+	Parameter H_Front_Porch bound to: 16 - type: integer 
+	Parameter H_Totals bound to: 800 - type: integer 
+	Parameter V_Sync_Width bound to: 2 - type: integer 
+	Parameter V_Back_Porche bound to: 33 - type: integer 
+	Parameter V_Active_Pixels bound to: 480 - type: integer 
+	Parameter V_Front_Porch bound to: 10 - type: integer 
+	Parameter V_Totals bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VGACtrl2' (7#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/VGACtrl2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGADraw2' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/VGADraw2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mode_X' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_X.v:23]
+	Parameter totlen bound to: 256 - type: integer 
+	Parameter return_asc bound to: 8'b00001101 
+	Parameter backspace_asc bound to: 8'b00001000 
+INFO: [Synth 8-6157] synthesizing module 'Adder32' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLA_16' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:42]
+INFO: [Synth 8-6157] synthesizing module 'CLA_group' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:60]
+INFO: [Synth 8-6157] synthesizing module 'FA_PG' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'FA_PG' (8#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:89]
+INFO: [Synth 8-6157] synthesizing module 'CLU' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'CLU' (9#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_group' (10#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_16' (11#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'Adder32' (12#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Adder32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul_32b' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/mul_32b.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mul_32b' (13#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/mul_32b.v:23]
+INFO: [Synth 8-6157] synthesizing module 'div_32b' [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/div_32b.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'div_32b' (14#1) [C:/Vivadolabs/lab4/lab4_pdf_and_resources/lab4/div_32b.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_X.v:155]
+INFO: [Synth 8-6157] synthesizing module 'posasc2bit' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/posasc2bit.v:23]
+INFO: [Synth 8-3876] $readmem data file 'C:/Vivadolabs/lab6/lab6_pdf_and_resources/lab6/ASC16.txt' is read successfully [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/posasc2bit.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'posasc2bit' (15#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/posasc2bit.v:23]
+Reason is one or more of the following :
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "l_type_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'Mode_X' (16#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_X.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mode_G' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_G.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Mode_G' (17#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_G.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Mode_I' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_I.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_mem' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1/.Xil/Vivado-14752-LAPTOP-D9H6QATN/realtime/vga_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vga_mem' (18#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1/.Xil/Vivado-14752-LAPTOP-D9H6QATN/realtime/vga_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Mode_I' (19#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_I.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mode_T' [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_T.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mode_T' (20#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/Mode_T.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGADraw2' (21#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/VGADraw2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGASim2' (22#1) [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.srcs/sources_1/new/VGASim2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xterm' (23#1) [C:/Vivadolabs/lab6/lab6_pdf_and_resources/lab6/xterm.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:40 ; elapsed = 00:02:42 . Memory (MB): peak = 4731.258 ; gain = 3620.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:49 ; elapsed = 00:02:52 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:49 ; elapsed = 00:02:52 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4734.438 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vivadolabs/lab6/VGA_interface/xterm/xterm.gen/sources_1/ip/vga_mem/vga_mem/vga_mem_in_context.xdc] for cell 'myVGASim2/vgadraw/myMode_I_inst/my_pic'
+Finished Parsing XDC File [c:/Vivadolabs/lab6/VGA_interface/xterm/xterm.gen/sources_1/ip/vga_mem/vga_mem/vga_mem_in_context.xdc] for cell 'myVGASim2/vgadraw/myMode_I_inst/my_pic'
+Parsing XDC File [c:/Vivadolabs/lab6/VGA_interface/xterm/xterm.gen/sources_1/ip/myclk_wiz/myclk_wiz/myclk_wiz_in_context.xdc] for cell 'myclk_wiz_inst'
+Finished Parsing XDC File [c:/Vivadolabs/lab6/VGA_interface/xterm/xterm.gen/sources_1/ip/myclk_wiz/myclk_wiz/myclk_wiz_in_context.xdc] for cell 'myclk_wiz_inst'
+Parsing XDC File [C:/Vivadolabs/lab6/lab6_pdf_and_resources/lab6/xterm.xdc]
+Finished Parsing XDC File [C:/Vivadolabs/lab6/lab6_pdf_and_resources/lab6/xterm.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivadolabs/lab6/lab6_pdf_and_resources/lab6/xterm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xterm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xterm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 4734.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.369 . Memory (MB): peak = 4734.438 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:18 ; elapsed = 00:03:19 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:18 ; elapsed = 00:03:19 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Vivadolabs/lab6/VGA_interface/xterm/xterm.gen/sources_1/ip/myclk_wiz/myclk_wiz/myclk_wiz_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Vivadolabs/lab6/VGA_interface/xterm/xterm.gen/sources_1/ip/myclk_wiz/myclk_wiz/myclk_wiz_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for myVGASim2/vgadraw/myMode_I_inst/my_pic. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for myclk_wiz_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:18 ; elapsed = 00:03:19 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:23 ; elapsed = 00:06:29 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 3     
+	   4 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 9     
+	   3 Input    8 Bit       Adders := 2     
+	   4 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 4     
+	   3 Input    4 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 64    
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 264   
+	               24 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2671  
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 258   
+	                1 Bit    Registers := 21    
++---Multipliers : 
+	               4x32  Multipliers := 1     
++---RAMs : 
+	               8K Bit	(256 X 32 bit)          RAMs := 1     
+	              768 Bit	(256 X 3 bit)          RAMs := 1     
+	               80 Bit	(10 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   8 Input  768 Bit        Muxes := 1     
+	   2 Input  768 Bit        Muxes := 2     
+	  31 Input  640 Bit        Muxes := 1     
+	 257 Input  128 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 17    
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 15335 
+	   8 Input    8 Bit        Muxes := 563   
+	   3 Input    8 Bit        Muxes := 233   
+	   4 Input    8 Bit        Muxes := 117   
+	 128 Input    8 Bit        Muxes := 1     
+	 257 Input    8 Bit        Muxes := 1     
+	  21 Input    8 Bit        Muxes := 1     
+	  12 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1040  
+	   3 Input    7 Bit        Muxes := 146   
+	   4 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 90    
+	   2 Input    5 Bit        Muxes := 6     
+	   8 Input    5 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 771   
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 21603 
+	 128 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 815   
+	   3 Input    1 Bit        Muxes := 57    
+	   7 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 258   
+	   5 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP myMode_I_inst/ram_addr, operation Mode is: C+A*(B:0x280).
+DSP Report: operator myMode_I_inst/ram_addr is absorbed into DSP myMode_I_inst/ram_addr.
+DSP Report: operator myMode_I_inst/ram_addr0 is absorbed into DSP myMode_I_inst/ram_addr.
+INFO: [Synth 8-7067] Removed DRAM instance i_0/i_0/calout_reg_0_15_6_7 from module extram__2 due to constant propagation
+INFO: [Synth 8-7066] Removed 1 DRAM instances from module extram__2 due to constant propagation
+INFO: [Synth 8-3886] merging instance 'mul_32b_inst/rp_reg[31]' (FDCE) to 'mul_32b_inst/rp_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\prec_reg[2] )
+INFO: [Synth 8-3886] merging instance 'flag_reg[1]' (FDRE) to 'flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'flag_reg[2]' (FDRE) to 'flag_reg[3]'
+INFO: [Synth 8-3886] merging instance 'flag_reg[3]' (FDRE) to 'flag_reg[4]'
+INFO: [Synth 8-3886] merging instance 'flag_reg[4]' (FDRE) to 'flag_reg[5]'
+INFO: [Synth 8-3886] merging instance 'flag_reg[5]' (FDRE) to 'flag_reg[6]'
+INFO: [Synth 8-3886] merging instance 'flag_reg[6]' (FDRE) to 'flag_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\flag_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[29][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[28][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[27][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[26][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[25][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[24][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[23][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[22][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[21][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[20][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[19][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[18][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[17][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[16][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[15][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[14][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[13][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[12][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[11][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[10][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[9][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[8][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[7][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[6][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[5][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[4][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[3][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[2][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[1][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[0][24][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[29][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[28][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[27][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[26][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[25][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[24][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[23][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[22][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[21][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[20][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[19][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[18][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[17][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[16][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[15][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[14][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[13][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[12][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[11][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[10][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[9][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[8][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[7][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[6][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[5][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[4][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[3][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[2][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[1][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[0][25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[29][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[28][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[27][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[26][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[25][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[24][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[23][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[22][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[21][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[20][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[19][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[18][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[17][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[16][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[15][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[14][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[13][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[12][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[11][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[10][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[9][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[8][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[7][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[6][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[5][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[4][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[3][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[2][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[1][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[0][27][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[29][30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[28][30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[27][30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[26][30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[25][30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[24][30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[23][30][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_reg[22][30][7] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:59 ; elapsed = 00:08:19 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-------------+------------+-----------+----------------------+-----------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++-------------+------------+-----------+----------------------+-----------------+
+|Mode_X__GCB0 | calout_reg | Implied   | 16 x 6               | RAM32M x 2	     | 
+|Mode_X__GCB5 | l_val_reg  | Implied   | 256 x 32             | RAM256X1S x 32	 | 
+|Mode_X__GCB6 | s_reg      | Implied   | 256 x 3              | RAM128X1D x 6	  | 
++-------------+------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Mode_I      | C+A*(B:0x280) | 12     | 10     | 12     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:08 ; elapsed = 00:08:27 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:08:15 ; elapsed = 00:08:35 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-------------+------------+-----------+----------------------+-----------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++-------------+------------+-----------+----------------------+-----------------+
+|Mode_X__GCB0 | calout_reg | Implied   | 16 x 6               | RAM32M x 2	     | 
+|Mode_X__GCB5 | l_val_reg  | Implied   | 256 x 32             | RAM256X1S x 32	 | 
+|Mode_X__GCB6 | s_reg      | Implied   | 256 x 3              | RAM128X1D x 6	  | 
++-------------+------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:08:41 ; elapsed = 00:09:07 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:09:08 ; elapsed = 00:09:34 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:09 ; elapsed = 00:09:35 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:18 ; elapsed = 00:09:44 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:19 ; elapsed = 00:09:45 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:25 ; elapsed = 00:09:51 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:26 ; elapsed = 00:09:52 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |myclk_wiz     |         1|
+|2     |vga_mem       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |myclk_wiz |     1|
+|2     |vga_mem   |     1|
+|3     |BUFG      |     1|
+|4     |CARRY4    |   252|
+|5     |DSP48E1   |     1|
+|6     |LUT1      |   105|
+|7     |LUT2      |  2300|
+|8     |LUT3      |  3544|
+|9     |LUT4      |  2709|
+|10    |LUT5      |  5681|
+|11    |LUT6      | 32382|
+|12    |MUXF7     |  4873|
+|13    |MUXF8     |  1452|
+|14    |RAM128X1D |     6|
+|15    |RAM256X1S |    32|
+|16    |RAM32M    |     1|
+|17    |FDCE      |   175|
+|18    |FDPE      |     1|
+|19    |FDRE      | 30464|
+|20    |FDSE      |   265|
+|21    |IBUF      |     3|
+|22    |OBUF      |    45|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:26 ; elapsed = 00:09:52 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:16 ; elapsed = 00:09:34 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+Synthesis Optimization Complete : Time (s): cpu = 00:09:26 ; elapsed = 00:09:53 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4734.438 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6617 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'xterm' is not ideal for floorplanning, since the cellview 'Mode_X' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4734.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 6 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+179 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:09:51 ; elapsed = 00:10:18 . Memory (MB): peak = 4734.438 ; gain = 3623.258
+INFO: [Common 17-1381] The checkpoint 'C:/Vivadolabs/lab6/VGA_interface/xterm/xterm.runs/synth_1/xterm.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 4734.438 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file xterm_utilization_synth.rpt -pb xterm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 16:35:32 2023...

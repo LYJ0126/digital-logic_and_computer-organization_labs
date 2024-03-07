@@ -1,0 +1,641 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan  9 12:44:24 2024
+# Process ID: 17908
+# Current directory: C:/Vivadolabs/lab11/system/system1/lab11/lab11.runs/synth_1
+# Command line: vivado.exe -log xterm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xterm.tcl
+# Log file: C:/Vivadolabs/lab11/system/system1/lab11/lab11.runs/synth_1/xterm.vds
+# Journal file: C:/Vivadolabs/lab11/system/system1/lab11/lab11.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source xterm.tcl -notrace
+Command: synth_design -top xterm -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23284
+WARNING: [Synth 8-6901] identifier 'lin' is used before its declaration [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/xterm.v:120]
+WARNING: [Synth 8-6901] identifier 'col' is used before its declaration [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/xterm.v:120]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1116.102 ; gain = 27.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xterm' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/xterm.v:24]
+INFO: [Synth 8-6157] synthesizing module 'divider25MHZ' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/xterm.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'divider25MHZ' (1#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/xterm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardSim' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:3]
+INFO: [Synth 8-6157] synthesizing module 'kbcode2ascii' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/kbcode2ascii.v:3]
+INFO: [Synth 8-3876] $readmem data file 'C:/Vivadolabs/lab5/lab5_pdf_and_resources/lab5/scancode.txt' is read successfully [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/kbcode2ascii.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'kbcode2ascii' (2#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/kbcode2ascii.v:3]
+INFO: [Synth 8-6157] synthesizing module 'KeyBoardReceiver' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyBoardReceiver.v:2]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyBoardReceiver.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (3#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyBoardReceiver.v:69]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyBoardReceiver.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'KeyBoardReceiver' (4#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyBoardReceiver.v:2]
+WARNING: [Synth 8-7071] port 'kclkf' of module 'KeyBoardReceiver' is unconnected for instance 'kbdr' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:27]
+WARNING: [Synth 8-7071] port 'kdataf' of module 'KeyBoardReceiver' is unconnected for instance 'kbdr' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:27]
+WARNING: [Synth 8-7071] port 'reset' of module 'KeyBoardReceiver' is unconnected for instance 'kbdr' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:27]
+WARNING: [Synth 8-7071] port 'overflow' of module 'KeyBoardReceiver' is unconnected for instance 'kbdr' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:27]
+WARNING: [Synth 8-7023] instance 'kbdr' of module 'KeyBoardReceiver' has 9 connections declared, but only 5 given [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardSim' (5#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VGASim' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/VGASim.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VGACtrl' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/VGACtrl.v:3]
+	Parameter H_Sync_Width bound to: 96 - type: integer 
+	Parameter H_Back_Porche bound to: 48 - type: integer 
+	Parameter H_Active_Pixels bound to: 640 - type: integer 
+	Parameter H_Front_Porch bound to: 16 - type: integer 
+	Parameter H_Totals bound to: 800 - type: integer 
+	Parameter V_Sync_Width bound to: 2 - type: integer 
+	Parameter V_Back_Porche bound to: 33 - type: integer 
+	Parameter V_Active_Pixels bound to: 480 - type: integer 
+	Parameter V_Front_Porch bound to: 10 - type: integer 
+	Parameter V_Totals bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VGACtrl' (6#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/VGACtrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VGADraw' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/VGAdraw.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ASCII' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/ASCII.v:3]
+INFO: [Synth 8-3876] $readmem data file 'C:/Vivadolabs/lab6/lab6_pdf_and_resources/lab6/ASC16.txt' is read successfully [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/ASCII.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ASCII' (7#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/ASCII.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VGADraw' (8#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/VGAdraw.v:4]
+WARNING: [Synth 8-7071] port 'state' of module 'VGADraw' is unconnected for instance 'vgadraw' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/VGASim.v:26]
+WARNING: [Synth 8-7023] instance 'vgadraw' of module 'VGADraw' has 7 connections declared, but only 6 given [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/VGASim.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'VGASim' (9#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/VGASim.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SingleCycleCPU' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/SingleCycleCPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'InstrParse' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/InstrParse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'InstrParse' (10#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/InstrParse.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (11#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'InstrToImm' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/InstrToImm.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'InstrToImm' (12#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/InstrToImm.v:4]
+INFO: [Synth 8-6157] synthesizing module 'regfile32' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/regfile32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile32' (13#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/regfile32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU32' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/ALU32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder32' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLA_16' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:41]
+INFO: [Synth 8-6157] synthesizing module 'CLA_group' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:59]
+INFO: [Synth 8-6157] synthesizing module 'FA_PG' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'FA_PG' (14#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:88]
+INFO: [Synth 8-6157] synthesizing module 'CLU' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'CLU' (15#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_group' (16#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_16' (17#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'Adder32' (18#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Adder32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'barrelsft32' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/barrelsft32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'barrelsft32' (19#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/barrelsft32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU32' (20#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/ALU32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BranchControl' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/BranchControl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'BranchControl' (21#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/BranchControl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nextPC' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/nextPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'nextPC' (22#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/nextPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SingleCycleCPU' (23#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/SingleCycleCPU.v:3]
+WARNING: [Synth 8-689] width (16) of port connection 'dbgdata' does not match port width (32) of module 'SingleCycleCPU' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/xterm.v:112]
+INFO: [Synth 8-6157] synthesizing module 'InstrMem' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/InstrMem.v:3]
+INFO: [Synth 8-3876] $readmem data file 'C:/Vivadolabs/lab11/lab11software(2)/main.hex' is read successfully [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/InstrMem.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'InstrMem' (24#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/InstrMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/DataMem.v:17]
+INFO: [Synth 8-3876] $readmem data file 'C:/Vivadolabs/lab11/lab11software(2)/main_d.hex' is read successfully [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/DataMem.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (25#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/DataMem.v:17]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/seg7decimal.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (26#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/seg7decimal.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xterm' (27#1) [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/xterm.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1881.277 ; gain = 792.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1900.621 ; gain = 811.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1900.621 ; gain = 811.988
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.568 . Memory (MB): peak = 1900.621 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/constrs_1/new/xterm.xdc]
+Finished Parsing XDC File [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/constrs_1/new/xterm.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/constrs_1/new/xterm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xterm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xterm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1953.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1953.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1953.820 ; gain = 865.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1953.820 ; gain = 865.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1953.820 ; gain = 865.188
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'keymemout_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'intmp_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/KeyboardSim.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'ExtOp_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWr_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUASrc_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUBSrc_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUctr_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWr_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'MemOp_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/Control.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'dataout_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'intmp_reg' [C:/Vivadolabs/lab11/system/system1/lab11/lab11.srcs/sources_1/new/DataMem.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 1953.820 ; gain = 865.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 1     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 32    
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 73    
+	               31 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2404  
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	            2048K Bit	(65536 X 32 bit)          RAMs := 1     
++---Muxes : 
+	 257 Input  128 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 16    
+	  14 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 4     
+	 257 Input    8 Bit        Muxes := 1     
+	  13 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	  17 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   8 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   9 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 3     
+	   8 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2599  
+	   3 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port BTNC in module KeyboardSim is either unconnected or has no load
+INFO: [Synth 8-4652] Swapped enable and write-enable on 32 RAM instances of RAM ram_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'kbsim/tail_reg[5]' (FDCE_1) to 'kbsim/tail_reg[6]'
+INFO: [Synth 8-3886] merging instance 'kbsim/tail_reg[6]' (FDCE_1) to 'kbsim/tail_reg[7]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[0][7]' (FDCE_1) to 'kbsim/kbdata_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[31][7]' (FDCE_1) to 'kbsim/kbdata_reg[31][8]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[30][7]' (FDCE_1) to 'kbsim/kbdata_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[29][7]' (FDCE_1) to 'kbsim/kbdata_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[28][7]' (FDCE_1) to 'kbsim/kbdata_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[27][7]' (FDCE_1) to 'kbsim/kbdata_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[26][7]' (FDCE_1) to 'kbsim/kbdata_reg[26][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[25][7]' (FDCE_1) to 'kbsim/kbdata_reg[25][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[24][7]' (FDCE_1) to 'kbsim/kbdata_reg[24][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[23][7]' (FDCE_1) to 'kbsim/kbdata_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[22][7]' (FDCE_1) to 'kbsim/kbdata_reg[22][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[21][7]' (FDCE_1) to 'kbsim/kbdata_reg[21][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[20][7]' (FDCE_1) to 'kbsim/kbdata_reg[20][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[19][7]' (FDCE_1) to 'kbsim/kbdata_reg[19][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[18][7]' (FDCE_1) to 'kbsim/kbdata_reg[18][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[17][7]' (FDCE_1) to 'kbsim/kbdata_reg[17][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[16][7]' (FDCE_1) to 'kbsim/kbdata_reg[16][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[15][7]' (FDCE_1) to 'kbsim/kbdata_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[14][7]' (FDCE_1) to 'kbsim/kbdata_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[13][7]' (FDCE_1) to 'kbsim/kbdata_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[12][7]' (FDCE_1) to 'kbsim/kbdata_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[11][7]' (FDCE_1) to 'kbsim/kbdata_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[10][7]' (FDCE_1) to 'kbsim/kbdata_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[9][7]' (FDCE_1) to 'kbsim/kbdata_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[8][7]' (FDCE_1) to 'kbsim/kbdata_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[7][7]' (FDCE_1) to 'kbsim/kbdata_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[6][7]' (FDCE_1) to 'kbsim/kbdata_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[5][7]' (FDCE_1) to 'kbsim/kbdata_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[4][7]' (FDCE_1) to 'kbsim/kbdata_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[3][7]' (FDCE_1) to 'kbsim/kbdata_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[2][7]' (FDCE_1) to 'kbsim/kbdata_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[1][7]' (FDCE_1) to 'kbsim/kbdata_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/tail_reg[7]' (FDCE_1) to 'kbsim/tail_reg[8]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[0][8]' (FDCE_1) to 'kbsim/kbdata_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[31][8]' (FDCE_1) to 'kbsim/kbdata_reg[31][9]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[30][8]' (FDCE_1) to 'kbsim/kbdata_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[29][8]' (FDCE_1) to 'kbsim/kbdata_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[28][8]' (FDCE_1) to 'kbsim/kbdata_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[27][8]' (FDCE_1) to 'kbsim/kbdata_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[26][8]' (FDCE_1) to 'kbsim/kbdata_reg[26][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[25][8]' (FDCE_1) to 'kbsim/kbdata_reg[25][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[24][8]' (FDCE_1) to 'kbsim/kbdata_reg[24][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[23][8]' (FDCE_1) to 'kbsim/kbdata_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[22][8]' (FDCE_1) to 'kbsim/kbdata_reg[22][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[21][8]' (FDCE_1) to 'kbsim/kbdata_reg[21][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[20][8]' (FDCE_1) to 'kbsim/kbdata_reg[20][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[19][8]' (FDCE_1) to 'kbsim/kbdata_reg[19][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[18][8]' (FDCE_1) to 'kbsim/kbdata_reg[18][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[17][8]' (FDCE_1) to 'kbsim/kbdata_reg[17][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[16][8]' (FDCE_1) to 'kbsim/kbdata_reg[16][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[15][8]' (FDCE_1) to 'kbsim/kbdata_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[14][8]' (FDCE_1) to 'kbsim/kbdata_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[13][8]' (FDCE_1) to 'kbsim/kbdata_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[12][8]' (FDCE_1) to 'kbsim/kbdata_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[11][8]' (FDCE_1) to 'kbsim/kbdata_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[10][8]' (FDCE_1) to 'kbsim/kbdata_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[9][8]' (FDCE_1) to 'kbsim/kbdata_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[8][8]' (FDCE_1) to 'kbsim/kbdata_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[7][8]' (FDCE_1) to 'kbsim/kbdata_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[6][8]' (FDCE_1) to 'kbsim/kbdata_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[5][8]' (FDCE_1) to 'kbsim/kbdata_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[4][8]' (FDCE_1) to 'kbsim/kbdata_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[3][8]' (FDCE_1) to 'kbsim/kbdata_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[2][8]' (FDCE_1) to 'kbsim/kbdata_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[1][8]' (FDCE_1) to 'kbsim/kbdata_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/tail_reg[8]' (FDCE_1) to 'kbsim/tail_reg[9]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[0][9]' (FDCE_1) to 'kbsim/kbdata_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[31][9]' (FDCE_1) to 'kbsim/kbdata_reg[31][10]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[30][9]' (FDCE_1) to 'kbsim/kbdata_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[29][9]' (FDCE_1) to 'kbsim/kbdata_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[28][9]' (FDCE_1) to 'kbsim/kbdata_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[27][9]' (FDCE_1) to 'kbsim/kbdata_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[26][9]' (FDCE_1) to 'kbsim/kbdata_reg[26][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[25][9]' (FDCE_1) to 'kbsim/kbdata_reg[25][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[24][9]' (FDCE_1) to 'kbsim/kbdata_reg[24][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[23][9]' (FDCE_1) to 'kbsim/kbdata_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[22][9]' (FDCE_1) to 'kbsim/kbdata_reg[22][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[21][9]' (FDCE_1) to 'kbsim/kbdata_reg[21][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[20][9]' (FDCE_1) to 'kbsim/kbdata_reg[20][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[19][9]' (FDCE_1) to 'kbsim/kbdata_reg[19][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[18][9]' (FDCE_1) to 'kbsim/kbdata_reg[18][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[17][9]' (FDCE_1) to 'kbsim/kbdata_reg[17][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[16][9]' (FDCE_1) to 'kbsim/kbdata_reg[16][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[15][9]' (FDCE_1) to 'kbsim/kbdata_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[14][9]' (FDCE_1) to 'kbsim/kbdata_reg[14][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[13][9]' (FDCE_1) to 'kbsim/kbdata_reg[13][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[12][9]' (FDCE_1) to 'kbsim/kbdata_reg[12][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[11][9]' (FDCE_1) to 'kbsim/kbdata_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[10][9]' (FDCE_1) to 'kbsim/kbdata_reg[10][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[9][9]' (FDCE_1) to 'kbsim/kbdata_reg[9][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[8][9]' (FDCE_1) to 'kbsim/kbdata_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[7][9]' (FDCE_1) to 'kbsim/kbdata_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[6][9]' (FDCE_1) to 'kbsim/kbdata_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[5][9]' (FDCE_1) to 'kbsim/kbdata_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[4][9]' (FDCE_1) to 'kbsim/kbdata_reg[4][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[3][9]' (FDCE_1) to 'kbsim/kbdata_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[2][9]' (FDCE_1) to 'kbsim/kbdata_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'kbsim/kbdata_reg[1][9]' (FDCE_1) to 'kbsim/kbdata_reg[1][31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[31][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[30][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[29][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[28][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[27][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[26][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[25][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[24][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[23][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[22][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[21][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[20][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[19][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[18][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[17][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[16][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[15][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[14][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[13][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[12][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[11][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[10][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[9][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[8][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[7][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[6][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[5][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[4][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[3][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\kbdata_reg[1][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (kbsim/\tail_reg[31] )
+WARNING: [Synth 8-7129] Port BusA[0] in module nextPC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Imm[0] in module nextPC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[6] in module InstrToImm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module InstrToImm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module InstrToImm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module InstrToImm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module InstrToImm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module InstrToImm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module InstrToImm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[6] in module Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[4] in module Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[3] in module Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[2] in module Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[1] in module Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port funct7[0] in module Control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[31] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module InstrMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module InstrMem is either unconnected or has no load
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cursor_x_reg[7] )
+WARNING: [Synth 8-7129] Port clk in module ASCII is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:32 ; elapsed = 00:03:01 . Memory (MB): peak = 1953.820 ; gain = 865.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|InstrMem    | p_0_out    | 4096x31       | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mydatamem_top | ram_reg    | 64 K x 32(READ_FIRST)  | W |   | 64 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:39 ; elapsed = 00:03:08 . Memory (MB): peak = 1953.820 ; gain = 865.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:43 ; elapsed = 00:03:13 . Memory (MB): peak = 1953.820 ; gain = 865.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mydatamem_top | ram_reg    | 64 K x 32(READ_FIRST)  | W |   | 64 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/mydatamem_top/ram_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:51 ; elapsed = 00:03:29 . Memory (MB): peak = 1960.527 ; gain = 871.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mydatamem_top/ram_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:01 ; elapsed = 00:03:39 . Memory (MB): peak = 1974.746 ; gain = 886.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:01 ; elapsed = 00:03:39 . Memory (MB): peak = 1974.746 ; gain = 886.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:06 ; elapsed = 00:03:44 . Memory (MB): peak = 1974.746 ; gain = 886.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:07 ; elapsed = 00:03:45 . Memory (MB): peak = 1974.746 ; gain = 886.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:46 . Memory (MB): peak = 1974.746 ; gain = 886.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:08 ; elapsed = 00:03:46 . Memory (MB): peak = 1974.746 ; gain = 886.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     6|
+|2     |CARRY4   |    57|
+|3     |LUT1     |    46|
+|4     |LUT2     |   308|
+|5     |LUT3     |  1275|
+|6     |LUT4     |   296|
+|7     |LUT5     |  1185|
+|8     |LUT6     | 15979|
+|9     |MUXF7    |  5940|
+|10    |MUXF8    |   944|
+|11    |RAMB36E1 |    64|
+|43    |FDCE     | 20497|
+|44    |FDRE     |   302|
+|45    |FDSE     |     1|
+|46    |LD       |   131|
+|47    |LDC      |    15|
+|48    |LDCP     |     1|
+|49    |IBUF     |     5|
+|50    |OBUF     |    29|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:08 ; elapsed = 00:03:46 . Memory (MB): peak = 1974.746 ; gain = 886.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:40 ; elapsed = 00:03:40 . Memory (MB): peak = 1974.746 ; gain = 832.914
+Synthesis Optimization Complete : Time (s): cpu = 00:03:09 ; elapsed = 00:03:47 . Memory (MB): peak = 1974.746 ; gain = 886.113
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1986.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 96 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1992.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 147 instances were transformed.
+  LD => LDCE: 99 instances
+  LD => LDCE (inverted pins: G): 32 instances
+  LDC => LDCE: 15 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+275 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:26 ; elapsed = 00:04:08 . Memory (MB): peak = 1992.496 ; gain = 903.863
+INFO: [Common 17-1381] The checkpoint 'C:/Vivadolabs/lab11/system/system1/lab11/lab11.runs/synth_1/xterm.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1992.496 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file xterm_utilization_synth.rpt -pb xterm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  9 12:48:43 2024...

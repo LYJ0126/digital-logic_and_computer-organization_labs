@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1695123904">
+  <File Type="OPT-HWDEF" Name="compare32b.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="compare32b_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="compare32b.dcp"/>
+  <File Type="BITSTR-BMM" Name="compare32b_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="compare32b_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="compare32b_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="compare32b_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="compare32b.tcl"/>
+  <File Type="OPT-TIMING" Name="compare32b_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="compare32b_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="compare32b_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="compare32b_reports.tcl"/>
+  <File Type="OPT-DRC" Name="compare32b_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="compare32b_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="compare32b_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="compare32b_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="compare32b_placed.dcp"/>
+  <File Type="PLACE-IO" Name="compare32b_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="compare32b_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="compare32b_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="compare32b_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="compare32b_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="compare32b_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="compare32b_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="compare32b_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="compare32b_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="compare32b.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="compare32b_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="compare32b_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="compare32b_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="compare32b.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="compare32b_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="compare32b_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="compare32b_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="compare32b_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="compare32b_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="compare32b_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="compare32b_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="compare32b.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="compare32b_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="compare32b_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="compare32b_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="compare32b_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="compare32b_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="compare32b_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="compare32b_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="compare32b_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="compare32b_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="compare32b_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="compare32b_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="compare32b_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="compare32b_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="compare32b_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="compare32b_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="compare32b_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="compare32b_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="compare32b_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="compare32b_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="compare32b_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="compare32b.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="compare32b_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="compare32b.rbt"/>
+  <File Type="BITSTR-NKY" Name="compare32b.nky"/>
+  <File Type="PDI-FILE" Name="compare32b.pdi"/>
+  <File Type="RCFI_FILE" Name="compare32b.rcfi"/>
+  <File Type="CFI_FILE" Name="compare32b.cfi"/>
+  <File Type="RNPI_FILE" Name="compare32b.rnpi"/>
+  <File Type="NPI_FILE" Name="compare32b.npi"/>
+  <File Type="RBD_FILE" Name="compare32b.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="compare32b.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="compare32b.sysdef"/>
+  <File Type="BG-BGN" Name="compare32b.bgn"/>
+  <File Type="BG-DRC" Name="compare32b.drc"/>
+  <File Type="RDI-RDI" Name="compare32b.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/compare32b.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="compare32b"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
