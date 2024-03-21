@@ -96,7 +96,7 @@
 ./lab*/*实验报告/
 
 #实验讲义及其他
-!/lab*/*pdf_and_resources/
+!./lab*/*pdf_and_resources/
 !*.txt
 !*.jpg
 !*.png
