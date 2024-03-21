@@ -93,7 +93,7 @@
 #!*.xmp
 
 #实验报告
-!*.pdf
+!/lab*/*实验报告/*.pdf
 
 #实验讲义及其他
 !/lab*/*pdf_and_resources/*
